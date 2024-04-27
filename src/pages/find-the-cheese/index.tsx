@@ -17,8 +17,8 @@ export default function FindTheCheese({ maze }: FindTheCheeseProps) {
   return (
     <div className="flex flex-col items-center">
       <div className="container p-4">
-        {maze.map(item => (
-          <Maze data={item} />
+        {maze.map((item, index) => (
+          <Maze data={item} key={index} />
         ))}
       </div>
     </div>
